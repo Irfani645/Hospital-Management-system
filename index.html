@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="hospital-management-system">
+        <header>
+            <div class="logo">
+                <img src="https://pimspeshawar.com/wp-content/uploads/2020/10/cropped-wp-logo-pims3-8.png" alt="Hospital Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Peshawar Institute of Medical Sciences-PIMS Hospital</h1>
+                    <h2>Hospital Management System</h2>
+                </div>
+            </div>
+            <button id="home-button" class="home-button">
+                <i data-lucide="home"></i>
+                Home
+            </button>
+        </header>
+
+        <main id="main-content">
+            <div id="feature-grid" class="feature-grid">
+                <!-- Feature cards will be dynamically inserted here -->
+            </div>
+
+            <div id="feature-details" class="feature-details" style="display: none;">
+                <h2 id="feature-title"></h2>
+                <form id="data-form">
+                    <!-- Form fields will be dynamically inserted here -->
+                </form>
+                <div class="button-group">
+                    <button id="back-button">Back</button>
+                    <button id="submit-button">Submit</button>
+                </div>
+            </div>
+
+            <div id="submitted-data" class="submitted-data" style="display: none;">
+                <h2>Submitted Data</h2>
+                <div id="data-display"></div>
+                <div class="button-group">
+                    <button id="edit-data">Edit</button>
+                    <button id="delete-data">Delete</button>
+                    <button id="download-pdf">Download PDF</button>
+                    <button id="download-excel">Download Excel</button>
+                    <button id="back-to-form">Back to Form</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
