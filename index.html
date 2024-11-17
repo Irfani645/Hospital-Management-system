@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </head>
 <body>
     <div class="hospital-management-system">
@@ -48,9 +49,16 @@
                     <button id="edit-data">Edit</button>
                     <button id="delete-data">Delete</button>
                     <button id="download-pdf">Download PDF</button>
+                    <button id="download-word">Download Word</button>
+                    <button id="download-ppt">Download PPT</button>
                     <button id="download-excel">Download Excel</button>
                     <button id="back-to-form">Back to Form</button>
                 </div>
+            </div>
+
+            <div id="patient-data" class="patient-data" style="display: none;">
+                <h2>Complete Patient Data</h2>
+                <div id="patient-list"></div>
             </div>
         </main>
     </div>

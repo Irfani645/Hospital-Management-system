@@ -171,3 +171,72 @@ button:hover {
 .radiology-upload input[type="text"] {
     padding: 8px;
 }
+
+/* ... (previous styles remain unchanged) ... */
+
+.patient-data {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.patient-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patient-info {
+    flex-grow: 1;
+}
+
+.patient-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    background-color: #f0f0f0;
+}
+
+.upload-area input[type="file"] {
+    display: none;
+}
+
+.uploaded-file {
+    background-color: #e6f7ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uploaded-file button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.uploaded-file button:hover {
+    background-color: #ff7875;
+}
